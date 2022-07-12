@@ -1,8 +1,13 @@
 #include "Menus.h"
+#include "Tama.h"
 #include <iostream>
 using namespace std;
 
 enum menuChoice{invalid, foodChoice, playChoice, statsChoice, quitChoice}; //globalized choices
+
+Tama Menus::tamaCreate() {
+
+}
 
 void Menus::checkStats() {
 	cout << "Here is " << "'s current status." << endl;
@@ -21,9 +26,9 @@ void Menus::menu() {
 		case(playChoice):
 			cout << "Tama play placeholder" << endl;
 			break;
-
 		case(statsChoice):
 			cout << "Printed stats placeholder" << endl;
+			//Tama::tamaPrinter;
 			break;
 		case (quitChoice):
 			break;

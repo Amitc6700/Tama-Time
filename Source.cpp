@@ -5,10 +5,8 @@ using namespace std;
 
 int main() {
 
-	Tama tama1("", 100, 100);
-	tama1.tamaPrinter();
-
-	//Menus::menu();
+	Tama::Tama();
+	Menus::menu();
 
 	return 0;
 }
