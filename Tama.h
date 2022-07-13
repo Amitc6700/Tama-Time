@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>;
+#include <iostream>
 using namespace std;
 
 class Tama {
@@ -28,5 +28,7 @@ public:
 	int getFullness();
 
 	void tamaPrinter();
+
+	int giveFood(int fullnessInc);
 };
 

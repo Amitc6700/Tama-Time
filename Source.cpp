@@ -4,8 +4,10 @@
 using namespace std;
 
 int main() {
+	//string x;
+	//Tama tama1(x, 100, 100);
 
-	Tama::Tama();
+	//tama1.tamaPrinter();
 	Menus::menu();
 
 	return 0;

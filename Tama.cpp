@@ -73,3 +73,13 @@ void Tama::tamaPrinter() { //prints stats
 	cout << "Happiness: " << getHapiness() << endl;
 	cout << "Fullness: " << getFullness() << endl << endl;
 }
+
+int Tama::giveFood(int fullnessInc) {
+	if (fullness >= 100) {
+		cout << name << " is currently full." << endl;
+	}
+	else {
+		fullness = fullnessInc;
+	}
+	return fullness;
+}

@@ -5,8 +5,10 @@ using namespace std;
 
 enum menuChoice{invalid, foodChoice, playChoice, statsChoice, quitChoice}; //globalized choices
 
-Tama Menus::tamaCreate() {
-
+ Tama Menus::tamaCreate() {
+	 string tname;
+	Tama tama1 = Tama(tname, 50, 50);
+	return tama1;
 }
 
 void Menus::checkStats() {
@@ -15,25 +17,29 @@ void Menus::checkStats() {
 
 void Menus::menu() {
 	int userChoice = invalid; //default choice is invalid
+	Tama tama1 = tamaCreate(); //Creates the Tama
 
 	while (userChoice != quitChoice) {
-		cout << "Welcome to the menus. Please select from the following options" << endl << "1. See your Tama's food options" << endl << "2. Play with your Tama" << endl << "3. Check your Tama's current status" << endl << "4. Quit" << endl << "Your input: ";
+		int fullnessInc = tama1.getFullness() + 25;
+		cout << endl << "Welcome to the menus. Please select from the following options" << endl << "1. See your Tama's food options" << endl << "2. Play with your Tama" << endl << "3. Check your Tama's current status" << endl << "4. Quit" << endl << "Your input: ";
 		cin >> userChoice;
 		switch (userChoice) {
 		case (foodChoice):
-			cout << "Tama's food placeholder" << endl;
+			cout << "You give " << tama1.getName() << " some food." << endl;
+			tama1.giveFood(fullnessInc);
 			break;
 		case(playChoice):
 			cout << "Tama play placeholder" << endl;
 			break;
 		case(statsChoice):
-			cout << "Printed stats placeholder" << endl;
-			//Tama::tamaPrinter;
+			cout << endl;
+			tama1.tamaPrinter();
 			break;
 		case (quitChoice):
 			break;
 		default:
 			cout << "Enter a valid choice." << endl;
+			break;
 		}
 	}
 }
