@@ -3,7 +3,7 @@
 class Menus{
 public:
 	static void menu();
-	static void checkStats();
-	static Tama tamaCreate();
+	static void checkStats(); // Checks Tama's stats
+	static Tama tamaCreate(); //Creates the tama
 };
 

@@ -1,9 +1,5 @@
 #include "Tama.h"
 
-int happiness; //tama happiness can be changed in other functions
-int fullness; // tama fullness can be changed in other functions
-bool nameCheck = false; //Name is defaultly incorrect until otherwise changed
-
 Tama::Tama() { //default tama constructor
 	name = "Tama";
 	happiness = 100;

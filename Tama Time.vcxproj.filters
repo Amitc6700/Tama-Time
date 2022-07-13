@@ -24,12 +24,18 @@
     <ClCompile Include="Tama.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TamaGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tama.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TamaGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

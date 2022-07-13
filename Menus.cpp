@@ -5,15 +5,13 @@ using namespace std;
 
 enum menuChoice{invalid, foodChoice, playChoice, statsChoice, quitChoice}; //globalized choices
 
- Tama Menus::tamaCreate() {
-	 string tname;
+ Tama Menus::tamaCreate() { //Creates the tama
+	string tname;
 	Tama tama1 = Tama(tname, 50, 50);
 	return tama1;
 }
 
-void Menus::checkStats() {
-	cout << "Here is " << "'s current status." << endl;
-}
+
 
 void Menus::menu() {
 	int userChoice = invalid; //default choice is invalid
@@ -33,6 +31,7 @@ void Menus::menu() {
 			break;
 		case(statsChoice):
 			cout << endl;
+			cout << "Here is " << tama1.getName() << "'s current status." << endl;
 			tama1.tamaPrinter();
 			break;
 		case (quitChoice):
