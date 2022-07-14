@@ -5,12 +5,9 @@
 using namespace std;
 
 int main() {
-	//TamaGame::playGame();
-	//string x;
-	//Tama tama1(x, 100, 100);
+	TamaGame::playGame();
 
-	//tama1.tamaPrinter();
-	Menus::menu();
+	//Menus::menu();
 
 	return 0;
 }
