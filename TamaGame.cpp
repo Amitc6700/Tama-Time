@@ -9,26 +9,26 @@
 #include <dos.h>
 #include <windows.h>
 #include <chrono> //For system_clock
-#include <random> // 
-
+#include <random> 
 using namespace std;
 
 void TamaGame::playGame() {
 	srand(time(0));
 	char userGuess;
 	bool continuePlaying = true;
-	cout << "Welcome to Tamagame!" << endl;
+	string playAgain;
+
 	while (continuePlaying == true) {
 		int correctGuess = 0;
 		int incorrectGuess = 0;
-		cout << "Welcome to Numbers Guessing Game!" << endl << "The CPU will display a number and you will have a chance to guess if your number is higher or lower than the mystery number!" << endl << "Best of 5 rounds wins!" << endl;
+		cout << "Welcome to Tama's Numbers Guessing Game!" << endl << "The CPU will display a number and you will have a chance to guess if your number is higher or lower than the mystery number!" << endl << "Best of 5 rounds wins!" << endl;
 		for (int i = 0; i < 5; i++) {
 			int cpuNum = rand() % 9 + 1;
 			int userNum = rand() % 9 + 1;
 			while (cpuNum == userNum) {
 				userNum = rand() % 9 + 1;
 			}
-			cout << "Your number: " << cpuNum << endl;
+			cout << endl << "Your number: " << cpuNum << endl;
 			cout << "Is your number higher or lower than the mystery number?" << endl << "Please insert h for higher or l for lower: ";
 			cin >> userGuess;
 			if (userGuess == 'h') {
@@ -53,9 +53,19 @@ void TamaGame::playGame() {
 					cout << "Incorrect guess." << endl;
 				}
 			}
-			cout << "Correct guesses: " << correctGuess << endl;
+			cout << endl << "Correct guesses: " << correctGuess << endl;
 			cout << "Incorrect guesses: " << incorrectGuess << endl;
+		}
+		cout << "Would you like to play again? Please enter either y or n: ";
+		cin >> playAgain;
+		if (playAgain == "y") {
+			continuePlaying = true;
+		}
+		else if (playAgain == "n") {
 			continuePlaying = false;
+		}
+		else if (playAgain != "y" && playAgain != "n") {
+			cout << endl << "Please enter a correct input. Either y or n." << endl << endl;
 		}
 	}
 }

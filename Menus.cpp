@@ -1,5 +1,6 @@
 #include "Menus.h"
 #include "Tama.h"
+#include "TamaGame.h"
 #include <iostream>
 using namespace std;
 

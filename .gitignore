@@ -1,0 +1,17 @@
+
+*.ipch
+.vs/Tama Time/v16/.suo
+.vs/Tama Time/v16/Browse.VC.db
+.vs/Tama Time/v16/Browse.VC.db-shm
+.vs/Tama Time/v16/Browse.VC.db-wal
+.vs/Tama Time/v16/Browse.VC.opendb
+*.obj
+*.recipe
+x64/Debug/Tama Time.exe
+x64/Debug/Tama Time.ilk
+*.log
+*.tlog
+x64/Debug/vc142.pdb
+x64/Debug/vc142.idb
+x64/Debug/Tama Time.vcxproj.FileListAbsolute.txt
+x64/Debug/Tama Time.pdb
