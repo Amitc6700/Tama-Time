@@ -31,5 +31,7 @@ public:
 	void tamaPrinter();
 
 	int giveFood(int fullnessInc);
+
+	int giveHappiness(int happinessInc);
 };
 

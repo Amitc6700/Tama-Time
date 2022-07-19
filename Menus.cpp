@@ -12,11 +12,10 @@ enum menuChoice{invalid, foodChoice, playChoice, statsChoice, quitChoice}; //glo
 	return tama1;
 }
 
-
-
 void Menus::menu() {
 	int userChoice = invalid; //default choice is invalid
 	Tama tama1 = tamaCreate(); //Creates the Tama
+	
 
 	while (userChoice != quitChoice) {
 		int fullnessInc = tama1.getFullness() + 25;
@@ -28,7 +27,8 @@ void Menus::menu() {
 			tama1.giveFood(fullnessInc);
 			break;
 		case(playChoice):
-			cout << "Tama play placeholder" << endl;
+			cout << endl;
+			TamaGame::playGame();
 			break;
 		case(statsChoice):
 			cout << endl;

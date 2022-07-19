@@ -79,3 +79,13 @@ int Tama::giveFood(int fullnessInc) {
 	}
 	return fullness;
 }
+
+int Tama::giveHappiness(int happinessInc) {
+	if (happiness >= 100) {
+		cout << name << " is already super happy!" << endl;
+	}
+	else {
+		happiness = happinessInc;
+	}
+	return happiness;
+}

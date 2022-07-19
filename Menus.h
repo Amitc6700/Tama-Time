@@ -5,5 +5,6 @@ class Menus{
 public:
 	static void menu();
 	static Tama tamaCreate(); //Creates the tama
+
 };
 
