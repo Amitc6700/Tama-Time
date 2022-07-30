@@ -28,7 +28,7 @@ void Menus::menu() {
 			break;
 		case(playChoice):
 			cout << endl;
-			TamaGame::playGame();
+			TamaGame::playGame(&tama1);
 			break;
 		case(statsChoice):
 			cout << endl;

@@ -11,7 +11,7 @@
 using namespace std;
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE); //helps change color of the text
 
-void TamaGame::playGame() {
+void TamaGame::playGame(Tama* aTama) {
 	srand(time(0));
 	char userGuess;
 	bool continuePlaying = true;
@@ -60,6 +60,7 @@ void TamaGame::playGame() {
 		}
 		if (correctGuess > incorrectGuess) {
 			numberOfWins++;
+			aTama->setHappiness(aTama->getHapiness() + 25);
 			//system("color A2");
 			SetConsoleTextAttribute(hConsole, 5); // changes the color of the text to purple
 			cout << 5 << endl << "You won the game!!" << endl << endl;

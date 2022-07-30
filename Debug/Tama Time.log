@@ -1,3 +1,7 @@
 ﻿  Menus.cpp
-C:\Users\Alex\source\repos\Tama Time\Tama Time\Tama.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Tama Time.vcxproj -> C:\Users\Alex\source\repos\Tama Time\Debug\Tama Time.exe
+  Source.cpp
+  Tama.cpp
+  TamaGame.cpp
+C:\Users\Alex\Documents\GitHub\Tama-Time\TamaGame.cpp(15,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Tama Time.vcxproj -> C:\Users\Alex\Documents\GitHub\Tama-Time\Debug\Tama Time.exe

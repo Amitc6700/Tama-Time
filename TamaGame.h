@@ -5,6 +5,6 @@
 class TamaGame
 {
 public:
-	static void playGame();
+	static void playGame(Tama* aTama);
 };
 
